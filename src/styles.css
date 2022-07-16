@@ -1,0 +1,102 @@
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to left bottom, #051937, #092f60, #0d478b, #1060ba, #127aeb);  
+}
+
+.title{
+  font-size: 70px;
+  color: #fff;
+  animation: toFlip 1s;
+}
+
+@keyframes toFlip {
+  from{
+    transform: rotateX(90deg);
+  }
+  to{
+    transform: rotateX(0deg);
+
+  }
+}
+
+.inputContent{
+  background-color: #eee;
+  padding: 15px;
+  margin: 35px 0;
+  display: flex;
+  border-radius: 5px;
+  box-shadow:
+  4.2px 3.4px 2.2px rgba(0, 0, 0, 0.062),
+  10.1px 8.1px 5.3px rgba(0, 0, 0, 0.089),
+  19px 15.3px 10px rgba(0, 0, 0, 0.11),
+  34px 27.3px 17.9px rgba(0, 0, 0, 0.131),
+  63.5px 51px 33.4px rgba(0, 0, 0, 0.158),
+  152px 122px 80px rgba(0, 0, 0, 0.22);
+}
+
+.inputContent input{
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: rgb(48, 48, 48);
+  margin-right: 8px;
+}
+
+.searchBtn{
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.searchBtn:hover{
+  transform: scale(1.2);
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow:
+  4.2px 3.4px 2.2px rgba(0, 0, 0, 0.062),
+  10.1px 8.1px 5.3px rgba(0, 0, 0, 0.089),
+  19px 15.3px 10px rgba(0, 0, 0, 0.11),
+  34px 27.3px 17.9px rgba(0, 0, 0, 0.131),
+  63.5px 51px 33.4px rgba(0, 0, 0, 0.158),
+  152px 122px 80px rgba(0, 0, 0, 0.22);
+}
+
+.main h2{
+  margin: 16px 0;
+  font-size: 25px;
+}
+
+.main span{
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 620px){
+  .title{
+    font-size: 60px;
+  }
+  .main h2{
+    font-size: 18px;
+  }
+  .main{
+    width: 80%;
+    min-height: 250px;
+  }
+}
